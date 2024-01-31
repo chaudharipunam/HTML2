@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            height: 300px;
+            width: 100%;
+            border: 2px solid black;
+            background: pink;
+            padding: 20px;
+        }
+
+        .b{
+            height: 300px;
+            width: calc(100% - 20px -20px -2px -2px);
+            border: 2px solid black;
+            background: pink;
+            padding: 20px;
+        }
+
+        .c{
+            height: 300px;
+            width: 500px;
+            border: 2px solid black;
+            background: pink;
+            padding: 20px;
+            position: absolute;
+            left: calc(50% - 250px - 20px - 1px);
+            top: calc(50% - 150px - 20px - 1px);
+        }
+    </style>
+</head>
+<body>
+    <div class="a"><h1>this box move/ we can scroll it --(because in this box width is 100% +padding of both sides 20+20 & border  1+1)</h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem cum quisquam odio distinctio. Eum quibusdam quae, architecto sint neque iste ullam porro est dolorum pariatur nemo culpa aliquid aut illo?
+    Odit doloribus pariatur maorem ipsum dolor, sit amet consectetur adipisicing elit. Autem cum quisquam odio distinctio. Eum quibusdam quae, architecto sint neque iste ullam porro est dolorum pariatur nemo culpa aliquid aut illo?
+    Odit doloribus pariatur maorem ipsum dolor, sit amet consectetur adipisicing elit. Autem cum quisquam odio distinctio. Eum quibusdam quae, architecto sint neque iste ullam porro est dolorum pariatur nemo culpa aliquid aut illo?
+    Odit doloribus pariatur maorem ipsum dolor, sit amet consectetur adipisicing elit. Autem cum quisquam odio distinctio. Eum quibusdam quae, architecto sint neque iste ullam porro est dolorum pariatur nemo culpa aliquid aut illo?
+    Odit doloribus pariatur maorem ipsum dolor, sit amet consectetur adipisicing elit. Autem cum q ipsum rem?
+    Officiis, omnis consequatur atque distinctio neque ex at, quidem eligendi recusandae incidunt suscipit sit nostrum aliquid ab deleniti fuga laudantium. Libero tenetur pariatur et! Maxime modi omnis officiis est. Eaque!</div>
+
+    <br><br>
+
+    <div class="b"><h1>we can't scroll it ---(because in this box width is 100% +padding of both sides 20+20 & border  1+1 all additional is minus remain only ---100%)</h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem cum quisquam odio distinctio. Eum quibusdam quae, architecto sint neque iste ullam porro est dolorum pariatur nemo culpa aliquid aut illo?
+        Odit doloribus pariatur maorem ipsum dolor, sit amet consectetur adipisicing elit. Autem cum  aliquid aut illo?
+        Oitatis magnam quaerat obcaecati ab, quo error quae. Nihil, nisi atque enim eum repudiandae iure.
+        Harum, quas est veritatis perferendis assumenda dolores esse nesciunt quod labore tempora ipsa quibusdam voluptatibus fugit? Suscipit, expedita saepe numquam, libero, dolore enim voluptate animi reprehenderit ipsa quidem ipsum rem?
+        Officiis, omnis consequatur atque distinctio neque ex at, quidem eligendi recusandae incidunt suscipit sit nostrum aliquid ab deleniti fuga laudantium. Libero tenetur pariatur et! Maxime modi omnis officiis est. Eaque!</div><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+        <div class="c"></div>
+        
+</body>
+</html>

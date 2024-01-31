@@ -1,0 +1,200 @@
+/*
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    display:inline-block;
+}
+
+#one{
+    position: static;
+    top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(201, 23, 218);
+    border: 2px solid black;
+    display:inline-block;
+}
+
+#two{
+    position: relative;
+    right: 20px;
+    bottom: 10px;
+}
+
+
+
+
+
+
+
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(29, 187, 166);
+    border: 2px solid rgb(35, 39, 38);
+    display:inline-block;
+}
+
+
+#four{
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+}
+
+
+
+
+
+
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(29, 187, 166);
+    border: 2px solid rgb(35, 39, 38);
+    display:inline-block;
+}
+
+#four{
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(29, 187, 166);
+    border: 2px solid rgb(35, 39, 38);
+    display:inline-block;
+}
+
+
+#four{
+    position:fixed;
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+file --  sticky_fix.html  
+div{
+    height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+    border: 4px dashed black;
+    display: inline-block;
+}
+
+#a{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
+
+#c{
+    position: sticky;
+    top: 200px;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*z-index    --- common proprty*/
+div{
+    height: 100px;
+    width: 100px;
+    border: 4px solid black;
+    display: inline-block;
+}
+
+/*
+box1>(box2,box3)
+#p{
+    z-index: 1;
+}
+
+#q{
+    position: relative;
+    top: 40px;
+    right:50px;
+    z-index: -1;
+}
+
+#r{
+    position: relative;
+    top: 0;
+    right:100px;
+    z-index: -2;
+}
+
+*/
+
+
+
+
+
+
+/*box2>(box1,box3)*/
+#q{
+    position: relative;
+    top: 40px;
+    right:50px;
+    z-index: 0;
+}
+
+#r{
+    position: relative;
+    top: 0;
+    right:100px;
+    z-index: -2;
+}
+

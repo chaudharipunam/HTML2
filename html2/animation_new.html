@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            height: 300px;
+            width: 300px;
+            background-color: lightgray;
+            font-size: 40px;
+            text-align: center;
+            margin: 50px;
+            line-height: 300px;
+            color: #03446A;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            animation-name: practice;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes practice{
+            from{
+                border-radius: 0%;
+            }
+            to{
+                border-radius: 50%;
+            }
+        }
+
+
+.b{
+    height: 100px;
+    width: 150px;
+    background-color: bisque;
+    margin: 100px;
+    text-align: center;
+   
+    animation-name: Back-color-width;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.b:hover{
+    animation-play-state: paused;
+}
+
+@keyframes Back-color-width{
+    0%{
+        background-color: aqua; width: 350px;
+    }
+    50%{
+        background-color: lightslategray; width: 450px;
+    }
+    100%{
+        background-color: lightsalmon; width: 550px;
+    }
+}
+
+span{
+    font-weight: 800;
+}
+
+
+.c{
+    height: 100px;
+    width: 150px;
+    background-color: bisque;
+    margin: 100px;
+    text-align: center;
+   
+    animation-name: Back-color-width;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+.c:hover{
+    animation-play-state:running;
+}
+
+@keyframes Back-color-width{
+    0%{
+        background-color: aqua; width: 350px;
+    }
+    50%{
+        background-color: lightslategray; width: 450px;
+    }
+    100%{
+        background-color: lightsalmon; width: 550px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="a">square to circle</div><br><br>
+    <h1>Animation-Plate-States - Paused   &  Running</h1>
+    <div class="b"><span>Paused value </span>- when you bring the cursor then style will be paused & when you move the cursor from the div still will again start</div>
+
+    <div class="c"><span>Running value </span>-oppose of paused , but here first we use animation-plate-states this property of paused value in classname & then in classname:hover we use again this property but value is Running</div>
+</body>
+</html>

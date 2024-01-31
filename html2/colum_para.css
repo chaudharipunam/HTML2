@@ -1,0 +1,67 @@
+.a{
+    width: 500px;
+    border: 2px solid black;
+    column-count: 3;
+    float: left;
+}
+
+.b{
+    width: 500px;
+    border: 2px solid black;
+    column-count: 3;
+    column-gap: 50px;
+    padding: 10px;
+    float: right;
+}
+
+.c{
+    width: 500px;
+    column-count: 3;
+    column-gap: 40px;
+    /*column-rule-width: 5px;
+    column-rule-color: rgb(126, 25, 25);
+    column-rule-style: dotted;*/
+    /*shorthand of rule*/
+    column-rule: 5px rgb(126, 25,25) dotted;
+    padding: 10px;
+    clear: both;
+}
+
+
+.d{
+    width: 1000px;
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-width: 5px;
+    column-rule-color: rgb(126, 25, 25);
+    column-rule-style: dotted;
+    column-width: 300px;
+    padding: 10px;
+    clear: both;
+}
+
+
+.e{
+    width: 1000px;
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-width: 5px;
+    column-rule-color: rgb(126, 25, 25);
+    column-rule-style: dotted;
+    column-width: 300px;
+    padding: 10px;
+    clear: both;
+}
+
+
+.f{
+    width: 1000px;
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-width: 5px;
+    column-rule-color: rgb(126, 25, 25);
+    column-rule-style: dashed;
+    column-width: 300px;
+    padding: 10px;
+    clear: both;
+}

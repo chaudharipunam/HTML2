@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action.php">
+        <fieldset>
+            <legend>Resistration Form</legend>
+        <label>Name: </label><input type="text" placeholder="username"><pre>     </pre>
+        <label>Password: </label><input type="password" placeholder="password">
+<br><br>
+<h5>Select the class</h5>
+        <label for="2">
+            <input type="radio" value="class I" name="class" id="2">class I
+        </label>
+        <br>
+        <label for="3">
+            <input type="radio" value="class II" name="class" id="3"> class II
+        </label>
+<br><br>
+<h5>select the subject</h5>
+        <label for="5">
+            <input type="checkbox" value="math" name="subject" id="5"> Math
+        </label>
+        <br>
+        <label for="6">
+            <input type="checkbox" value="phy" name="subject" id="6"> Physics
+        </label>
+        <br>
+        <label for="7">
+            <input type="checkbox" value="bio" name="subject" id="7"> Biology
+        </label>
+        <br>
+        <label for="8">
+            <input type="checkbox" value="hist" name="subject" id="8"> History
+        </label>
+        <br>
+        <br>
+        <h5>Select the District</h5>
+        <label>city: </label>
+        <select>
+            <option value="Delhi">Delhi</option>
+            <option value="Banglore">Banglore</option>
+            <option value="Pune">Pune</option>
+            <option value="Gondia">Gondia</option>
+        </select>
+        <br><br>
+        <textarea name="feedback" id="9" placeholder="please give your valuable feedback here" rows="5">feedback</textarea><br>
+        <input type="submit" value="submit">
+
+
+
+        <br><br><br>
+        <label>colors/flower: </label>
+        <select>
+            <optgroup label="colors">
+                <option>red</option>
+                <option>green</option>
+                <option>pinky</option>
+                <option>blue</option>
+            </optgroup>
+            <optgroup label="flowers">
+                <option>hibiscus</option>
+                <option>Leaves</option>
+                <option>rose</option>
+                <option>merigold</option>
+            </optgroup>
+        </select>
+
+
+
+    <br><br><br>
+<label>cars</label>
+        <input list="cars">
+        <datalist id="cars">
+            <option value="toyoto">
+            <option value="kwid">
+            <option value="Etios">
+            <option value="Poonam">
+        </datalist>
+
+
+        <br><br><br>
+<label>Upload File</label> <input type="file"  accept="image/*" name="" />
+
+<br> <br>
+<input type="submit" value="save" />  <!--use for submit-->
+
+<bR><br>
+    <input type="button" value="cilck" /> <!--use in javascript & use for click on something-->
+<br><br>
+<input type="reset" />
+<br><br>
+<input type="image" src="video.png" width="50px" alt="submit button" />
+<label>Select Color</label>   <input type="color" name="" />
+    <br><br>
+
+
+    <label>Number</label> <input type="number" name="" />  <!--number increase/decrease option unlimited-->
+    <label>Number</label> <input type="number" min="1" max="10" name="" />   <!--number increase/decrease option 1 to 10-->
+    <label>Number</label> <input type="number" min="0" max="100" step="10" name="" />  <!--number increase/decrease option 0 to 100 but distance of 10-10-->
+<br> <br>
+
+<label>Range</label> <input type="range" name="" />  <!--same of Number-->
+<label>Range</label> <input type="range" min="1" max="10" name="" />   <!--number increase/decrease option 1 to 10-->
+    <label>Range</label> <input type="range" min="0" max="100" step="10" name="" />  <!--number increase/decrease option 0 to 100 but distance of 10-10-->
+<br> <br>
+
+
+<label>Date</label> <input type="date" name="" /> <!--set the date-->
+<label>Datetime</label> <input type="datetime-local" name="" />  <!--set the date with time-->
+
+<label>Month</label> <input  type="month" />  <!--set the month-->
+
+<label>Week</label> <input type="week" name="" />  <!--ye sal me konse number ke week me o date aati h o batata hai-->
+
+<label>Time</label> <input type="time" name="" />  <!--set  time-->
+
+<br><br>
+<label>Email</label> <input type="email" name="" />  <!--use for write email-->
+
+<br><br>
+<label>URL</label> <input type="url" name="" />    <!--use for write URL-->
+
+<br><br>
+<label>Search</label> <input type="search" name="" />   <!--use for write search-->
+
+<br><br>
+<label>Phone No.</label> <input type="tel" name="" />   <!--use for write phone no.-->
+
+<br><br>
+<input type="submit" />  <!--this is use for check that email, URL ,,,if email,url is right, then it will take action ,otherwise give instruction -->
+</fieldset>
+</form>
+
+</body>
+</html>

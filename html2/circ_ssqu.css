@@ -1,0 +1,15 @@
+h1{
+    height: 100px;
+    width: 150px;
+    background-color: rgb(240, 216, 180);
+    border-radius: 25%;
+    text-align: center;
+}
+
+h2{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(180, 218, 240);
+    border-radius: 25%;
+    text-align: center;
+}

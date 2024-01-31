@@ -1,0 +1,48 @@
+@import "css@import2.css";
+@import "css@import3.css" print;
+@import "css@import4.css" screen and (max-width:900px);
+
+/*structure*/
+/*basic 1st css page*/
+
+.content{
+    position: absolute;
+    left:200px;
+    margin-top: 0;
+}
+
+.wrapper{
+    height: 490px;
+    width: 1000px;
+    padding: 20px;
+}
+
+.header{
+    height: 100px;
+    font-size: 20px;
+}
+
+.menu li{
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.menu{
+    height: 50px;
+}
+
+.content{
+    height: 300px;
+    float: left;
+    width: 850px;
+}
+
+.sidebar{
+    float: right;
+    min-height: 300px;
+}
+
+.footer{
+    clear: both;
+    text-align: right;
+}

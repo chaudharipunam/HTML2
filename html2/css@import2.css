@@ -1,0 +1,29 @@
+/*Color*/
+
+.content{
+    background-color: gray;
+}
+
+.wrapper{
+    background-color: lightblue;
+}
+
+.header{
+    background: green;
+}
+
+.menu{
+    background-color: greenyellow;
+}
+
+.content{
+    background-color: blanchedalmond;
+}
+
+.sidebar{
+   background-color: antiquewhite;
+}
+
+.footer{
+   background-color: blueviolet;
+}

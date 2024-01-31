@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: slategrey;
+        }
+
+        .wrapper{
+            width: 1000px;
+            border:0px solid black;
+            background: white;
+            margin: 0 auto;
+            padding: 5px;
+        }
+
+        .header{
+            font-size: 20px;
+            background-color: var(--main-color);
+            height: 100px;
+            color: var(--font_color);
+            position: relative;
+            top: -30px;
+        }
+
+       h2{
+        color:var(--font_color);
+       }
+
+        .menu{
+            background:var(--main-color);
+        }
+
+        .menu li{
+            display: inline-block;
+        }
+
+        .menu ul{
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu li a:hover{
+            background-color: cornflowerblue;
+            
+        }
+        .menu li a{
+            display: block;
+            padding: 5px 10px;
+            text-decoration: none;
+
+        }
+        .sidebar{
+            background-color: rgb(212, 103, 212);
+            width: 200px;
+            float:right;
+            min-height: 300px;
+        }
+
+        .sidebar a{
+            text-decoration: none;
+        }
+
+        .footer{
+            background-color: var(--main-color);
+            clear: both;
+            padding: 5px;
+            text-align: right;
+            font-size: 20px;
+            color: var(--font_color);
+        }
+
+        .content{
+            width: 800px;
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        :root{
+            --main-color:lightgray;
+            --font_color:darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>MY WEBSITE</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Some Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt quaerat, qui distinctio debitis magnam, accusamus saepe eaque soluta quidem rerum, cumque nam exercitationem. Maxime nam, dicta sunt saepe explicabo quae!
+            Commodi consequatur quod illum eius vel blanditiis ea iure aspernatur, veniam perspiciatis. Ullam, cupiditate, corrupti quo hic harum, eveniet est earum ducimus explicabo quae ab quis nisi autem eligendi culpa.
+            Unde porro nemo veritatis, consequuntur commodi doloremque asperiores ipsum magnam impedit magni similique. In, excepturi. Praesentium nostrum aperiam explicabo quo nihil possimus est sapiente nobis, cum, quis quasi magnam inventore.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex corporis, nisi sunt obcaecati cumque nobis culpa itaque recusandae repudiandae, odio hic non reiciendis deleniti harum impedit laudantium? A, eius ex.
+            Corrupti sunt officiis optio soluta! Voluptatem accusamus eaque corporis ipsam reprehenderit alias. Blanditiis dolorem dolor eum neque quis aut culpa deleniti inventore laudantium, maiores temporibus illo. Amet delectus minus nam.</p>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            websitename@copyright
+        </div>
+    </div>
+
+
+    <br><br><br>
+
+    <h3>Local scope -- it's a style will be change onlyy in one selector , then that in another selector will no change <br> Ex.  selector1{<br>--main-color: red;<br>color:var(--main-color);}  <br>color will change of that particular selector & & &<br><br> & this example<br>Ex.selector1 a{<br>background-coolor:var(--main-color);<br>}<br> <br>color will not change because it's  LOCAL scope</h3>
+</body>
+</html>

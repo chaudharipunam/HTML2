@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input:focus{
+        border: 3px solid rgb(255, 0, 128);
+    }
+
+    input[type="checkbox"]:checked{
+        box-shadow: 0 0 3px red;
+    }
+
+    input[type="radio"]:checked{
+        box-shadow: 0 0 3px red;
+        
+    }
+
+    input[type='text']:disabled{           /*disabled/enabled*/
+        border: 4px dotted red;
+    }
+
+    input:required{                       /*Required/Optional*/
+        border: gray;
+        background: lightblue;
+    }
+
+    input:in-range{
+        font-size: 30px;
+    }
+
+    input:out-of-range{
+        font-size: 15px;
+    }
+
+    input:read-only{                         /*read-only/read-write*/
+        border: 10px solid ;
+    }
+
+    input:invalid{
+        background: ghostwhite;
+        border: 2px solid red;
+    }
+
+    input[type="email"]:invalid{
+        background: ghostwhite;
+        border: 2px solid red;
+    }
+
+    input:invalid{
+        background: rgb(64, 243, 142);
+        border: 2px solid rgb(209, 186, 186);
+    }
+
+    input:default{
+        box-shadow: 5px 5px 3px blue;
+    }
+
+    option:default{
+        font-weight: 900;
+    }
+</style>
+<body> <h1>:Focus-when you click in any input box then it's style will be change   -use on all input box<br>:checked-it's use for checkbox-radio button to change their style<br>:disabled- it's use for jab hame kisi box me data nahi bharana ho it means it style that box & firstly it's use in html (after value in label) then it use in css & it's use in Last name<br>:enabled- it style opposite of :disabled box -its use in disabled  wale box  ko chhodke sare text box<br>:Required -it's used in HTML, then in Chrome in that box where in HTML we use (Required) , vha hame data fill karna hi hoga otherwise submit nhi hoga  & ham ise css me bhi use kar sakte hai like (disabled) for change the style but here ham in css , input ke bad type & uski value nhi likhte  directly  :Required/Optional dono me se ek likhte hai -it's use in 'name box & email box'<br> :Optional- it's optional- no need to  write in HTML . ham ise css me use karte hai like (enabled) for change the style  checkbox , radio button & required wale box ko chhod ke baake ke sare box<br>:In-range- it's use only for number (incre-decre wala) & it's used for if number is in number range(style that)
+ <br>:out-of-range- it's use only for number (incre-decre wala no. range) & it's used for if number is out of number range(style that)<br>:readonly-use  for we can't write/change any data/box  use for change style , use in password<br>:readwrite-opposite of readonly , use for change style , use in rest of opposite of readonly<br>:invalid- it's more use than :valid it's jab tak data valid nahi hoga/email/any data sahi nahi likhonge tb tk ye invalid  hi show hoga & also use for styling to invalid box , i) it's is use in all boxes when data will be wrong that time this style will show & ii) for particular data [email-id] we should use one both of them, &  till now this is not working ,but when  remove the code of line (checked) 13 to 41(read-only) then it will be work <br> it's use styling to the valid box/ jab email-id box me valid hogi tb us email-id box ki style valid box me jo hai o hogi<br>:Default-it's use in only radio ,checkbox & (option tag in select tag), In radio & checkbox in HTML we write in label checked & In option we write "selected" this word in any one name of them(jo option ke andar hai unme se ek me "selected" ye word dalna hai) then in css styling , use in Radio/checkbox & option tag for change style</h1>
+    <form action="/action.php">
+        <fieldset>
+            <legend>Resistration Form</legend>
+        <label>First Name: </label><input type="text" placeholder="username" required><pre>     </pre>
+        <label>Second Name: </label><input type="text" placeholder="username" required><pre>     </pre>
+        <label>Last Name: </label><input type="text" placeholder="username" disabled ><pre>     </pre>
+        <label>Password: </label><input type="password" placeholder="password" readonly>
+<br><br>
+<h5>Select the class</h5>
+        <label for="2">
+            <input type="radio" value="class I" name="class" id="2" checked>class I
+        </label>
+        <br>
+        <label for="3">
+            <input type="radio" value="class II" name="class" id="3"> class II
+        </label>
+<br><br>
+<h5>select the subject</h5>
+        <label for="5">
+            <input type="checkbox" value="math" name="subject" id="5"> Math
+        </label>
+        <br>
+        <label for="6">
+            <input type="checkbox" value="phy" name="subject" id="6"> Physics
+        </label>
+        <br>
+        <label for="7">
+            <input type="checkbox" value="bio" name="subject" id="7" checked> Biology
+        </label>
+        <br>
+        <label for="8">
+            <input type="checkbox" value="hist" name="subject" id="8"> History
+        </label>
+        <br>
+        <br>
+        <h5>Select the District</h5>
+        <label>city: </label>
+        <select>
+            <option value="Delhi">Delhi</option>
+            <option value="Banglore">Banglore</option>
+            <option value="Pune">Pune</option>
+            <option value="Gondia" selected>Gondia</option>
+        </select>
+        <br><br>
+    
+
+    <label>Number</label> <input type="number" min="1" max="10" name="" />   <!--number increase/decrease option 1 to 10-->
+
+    <br><br>
+    <label>Email</label> <input type="email" name="" required />  <!--use for write email-->
+    
+        <input type="submit" value="submit">
+
+
+
+</form>
+
+
+
+
+</body>
+</html>

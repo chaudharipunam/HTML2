@@ -1,0 +1,32 @@
+/*div{
+    background-color: pink;
+    display: inline;
+}
+
+button{
+    background-color: aquamarine;
+    display: block;
+}
+
+*/
+
+
+div{
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+    padding: 25px;
+    display: inline-block;
+}
+
+#two{
+    display: none;
+}
+
+#three{
+    visibility: hidden;
+}
+
+#four{
+    display: list-item;
+}

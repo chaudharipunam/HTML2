@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a li:first-child{
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        .a li:last-child{
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        .b li:nth-child(2){
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        .c li:nth-child(2n){
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        .d li:nth-child(3n-1){
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        .e li:nth-last-child(3n+1){
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        .f li:nth-of-type(2n+1){
+            font-size: 20px;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <h1>pseudo class</h1>
+    <ul class="a">
+        <li>:first-child-first content of element</li>
+        <li>consectetur adipisicing elit.</li>
+        <li>Temporibus inventore</li>
+        <li>:last-child - first content of element</li>
+    </ul>
+<br><br>
+    <h3>:nth-child()-Rule-1</h3>
+    <ul class="b">
+        <li>:first-child-first content of element</li>
+        <li>:nth-child(2)-multiple of 2</li>
+        <li>Temporibus inven:nth-child(2)tore</li>
+        <li>:last-child - first content of element</li>
+    </ul>
+<h3>Rule-2</h3>
+    <ul class="c">
+        <li>:first-child-first content of element</li>
+        <li>:nth-child(2n)-multiple of 2</li>
+        <li>Temporibus inventore</li>
+        <li>:nth-child(2n)-multiple of 2</li>
+    </ul>
+
+    <h3>Rule-3</h3>
+    <ul class="d">
+        <li>:first-child-first content of element</li>
+        <li>:nth-child(3n-1)-multiple of 3 -1</li>
+        <li>Temporibus inventore</li>
+        <li>consectetur adipisicing elit.</li>
+        <li>:nth-child(3n-1)-multiple of 3-1</li>
+        <li>Temporibus inventore</li>
+    </ul><br>
+<h3>:nth Last-Child</h3>
+    <ul class="e">
+        <li>Lorem ipsum dolor sit.</li>
+        <li>amet consectetur adipisicing elit.</li>
+        <li> :nth-last-child(3n+1)-multiple of 3+1</li>
+        <li>iure qui porro placeat.</li>
+        <li>voluptate nam modi aliquam fugiat </li>
+        <li>:nth-last-child(3n+1)-multiple of 3+1</li>
+    </ul>
+
+
+    <br>
+<h3>:nth-of-type</h3>
+    <ul class="f">
+        <li>Lorem ipsum dolor sit.</li>
+        <li>amet consectetur adipisicing elit.</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit</li>
+        <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>consectetur adipisicing elit. Vitae.</li>
+            <Li>amet earum accusantium</Li>
+            <li> quae iure quia nobis</li>
+            <li> maiores possimus iusto dolores</li>
+            <li>veritatis soluta error. </li>
+            
+        </ul>
+        <li>iure qui porro placeat.</li>
+        <li>voluptate nam modi aliquam fugiat </li>
+        <li> Alias et accusamus, nam eaque tempore,</li>
+    </ul>
+
+</body>
+</html>

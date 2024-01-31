@@ -1,0 +1,66 @@
+#h{
+    height: 100%;
+    width: 500px;
+    border: 2px solid black;
+    padding:20px;
+    background-image: url(back2.jpeg);
+    color: white;
+}
+
+
+#g{
+    height: 100%;
+    width: 800px;
+    border: 2px solid black;
+    padding:20px;
+    background-image: url(back2.jpeg);
+    /*background-repeat: no-repeat;      for img no-repeat
+    background-repeat: repeat-x;         for img repeat horizontally
+    background-repeat: repeat-y;         for img repeat vertically
+    background-repeat: round;            like repeat but little different
+    background-repeat: space;            for img repeat verti-hori with some space  */
+    color: rgb(219, 26, 26);
+}
+
+
+#f{
+    height: 100%;
+    width: 800px;
+    border: 2px solid black;
+    padding:20px;
+    background-image: url(back2.jpeg);
+    background-repeat: no-repeat;
+    /* background-position: right;   
+    background-position: right bottom;
+    background-position: right top;
+    background-position: center center;
+    background-position: left bottom;
+    background-position: 100px 200px;
+    background-position: center top;
+    background-position: 200px 10px;
+    background-position: 70% 40%;     these are various properties of position*/
+    color: rgb(187, 18, 69);
+}
+
+
+
+#e{
+    height: 100%;
+    width: 400px;
+    border: 2px solid black;
+    padding:20px;
+    background:pink url(back2.jpeg) no-repeat center center ;
+    color: rgb(69, 9, 209);
+}
+
+
+#d{
+    height: 100%;
+    width: 500px;
+    border: 2px solid black;
+    padding:20px;
+    background-image: url(flowers2.jpeg),url(back2.jpeg);
+    background-repeat:repeat-y,no-repeat;
+    background-position: 100px 200px, right center;
+    
+}

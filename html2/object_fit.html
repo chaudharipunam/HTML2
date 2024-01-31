@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        .a{
+            width:70%;
+            margin: 0 auto;
+        }
+        .b{
+            width: 42%;
+            border: 1px solid black;
+            margin: 15px;
+            padding: 10px;
+            float: left;
+        }
+
+        .c{
+            margin-top: 10px;
+        }
+
+.b img{
+    width:100%;
+    height:150px;
+    object-fit:none;
+    object-fit:fill;
+    object-fit:scale-down;
+    object-fit:contain;
+    object-fit:cover;
+    object-position: top;   /*   object position is use for image ko kis side se puri tarah se dikhana hai uske hisa\b se direction dena*/ 
+    object-position: right;
+    object-position: left;
+    object-position: bottom;
+}
+
+        @media screen and (max-width:950px){
+            .b{
+                width:48%;
+            }
+        }
+
+        @media screen and (max-width:800px){
+            .b{
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="b">
+            <img src="butterfly.jpeg">
+            <div class="c">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora corrupti illo molestias obcaecati consectetur, tempore voluptas optio id vitae explicabo delectus perspiciatis sunt est porro atque excepturi, soluta velit omnis!
+            Accusamus beatae nemo eveniet, ipsum magni, quasi, illum ssimos?</div>
+        </div>
+        <div class="b">
+            <img  src="flowers2.jpeg">
+            <div class="c">cupiditate dolorum aliquam sit culpa reprehenderit. Facilis alias itaque repellat voluptatum temporibus similique, facere consequatur fugiat, nisi vitae accusamus perspiellat voluptatum temporibus similique, facere consequatur fugiat, nisiellat voluptatum temporibus similique, facere consequatur fugiat, nisiciatis dolorum ellat voluptatum temporibus similique, facere consequatur fugiat, nisiellat voluptatum temporibus similique, facere consequatur fugiat, nisiellat voluptatum temporibus similique, facere consequatur fugiat, nisidigni</div>
+        </div>
+        <div class="b">
+            <img src="back2.jpeg">
+            <div class="c">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus omnis tempora quae recusandae molestiae nisi similique dolores iusto. Reiciendis recusandae modi asperiores deleniti! Eligendi at cumque est molestiae, quas reiciendis?</div>
+        </div>
+    </div>
+</body>
+</html>

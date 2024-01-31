@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>/* basic grid table */
+        .a{
+            background: #eee;
+            width: 700px;
+            height: 300px;
+            margin:70px 0 0 50px;
+            display: grid;
+            /* grid-template-columns: 100px 150px 200px;  
+            grid-template-columns: repeat(2,200px) 1fr;
+            grid-template-columns: repeat(2,200px);*/
+            grid-template-columns: 35% repeat(2, 100px);
+            grid-template-rows: 150px 100px 50%;
+            grid-gap:20px;
+        }
+
+        .items1{
+            background-color: orangered;
+        }
+
+        .items2{
+            background-color: rgb(177, 78, 29);
+        }
+
+        .items3{
+            background-color: rgb(4, 110, 22);
+        }
+
+        .items4{
+            background-color: rgb(121, 91, 83);
+        }
+
+        .items5{
+            background-color: rgb(255, 123, 0);
+        }
+
+        .items6{
+            background-color: rgb(52, 44, 128);
+        }
+
+
+/* grid table for grid row */
+        .b{
+            background: #eee;
+            width: 700px;
+            height: 300px;
+            margin:70px 0 0 50px;
+            display: grid;
+            grid-template-columns: 250px 250px;
+            grid-template-rows: repeat(3,70px);
+            grid-row-gap:20px;
+        }
+
+        .c{
+            background-color: orangered;
+        }
+
+        .d{
+            background-color: rgb(177, 78, 29);
+        }
+
+        .e{
+            background-color: rgb(4, 110, 22);
+        }
+
+        .f{
+            background-color: rgb(121, 91, 83);
+        }
+
+        .g{
+            background-color: rgb(255, 123, 0);
+        }
+
+        .h{
+            background-color: rgb(52, 44, 128);
+        }
+
+
+/* grid table for grid column */
+        .j{
+            background: #eee;
+            width: 700px;
+            height: 300px;
+            margin:70px 0 0 50px;
+            display: grid;
+            grid-template-columns: 250px 250px;
+            grid-template-rows: repeat(3,70px);
+            grid-column-gap:20px;
+        }
+
+        .k{
+            background-color: orangered;
+        }
+
+        .l{
+            background-color: rgb(177, 78, 29);
+        }
+
+        .m{
+            background-color: rgb(4, 110, 22);
+        }
+
+        .n{
+            background-color: rgb(121, 91, 83);
+        }
+
+        .o{
+            background-color: rgb(255, 123, 0);
+        }
+
+        .p{
+            background-color: rgb(52, 44, 128);
+        }
+
+
+/*  Shorthand of grid row/column */
+        .r{
+            background: #eee;
+            width: 700px;
+            height: 300px;
+            margin:70px 0 0 50px;
+            display: grid;
+            grid-template-columns: 250px 250px;
+            grid-template-rows: repeat(3,70px);
+            grid-gap:20px 20px;
+        }
+
+        .s{
+            background-color: orangered;
+        }
+
+        .t{
+            background-color: rgb(177, 78, 29);
+        }
+
+        .u{
+            background-color: rgb(4, 110, 22);
+        }
+
+        .v{
+            background-color: rgb(121, 91, 83);
+        }
+
+        .w{
+            background-color: rgb(255, 123, 0);
+        }
+
+        .x{
+            background-color: rgb(52, 44, 128);
+        }
+    </style>
+</head>
+<body><h1>basic grid table</h1>
+    <div class="a">
+        <div class="items items1">Fist</div>
+        <div class="items items2">Second</div>
+        <div class="items items3">Third</div>
+        <div class="items items4">Fourth</div>
+        <div class="items items5">Fifth</div>
+        <div class="items items6">Sixth</div>
+    </div>
+
+
+    <br><Br><h1>grid table for grid row</h1>
+        <div class="b">
+            <div class="c">1</div>
+            <div class="d">2</div>
+            <div class="e">3</div>
+            <div class="f">4</div>
+            <div class="g">5</div>
+            <div class="h">6</div>
+        </div>
+
+
+        <br><Br><h1>grid table for grid column</h1>
+            <div class="j">
+                <div class="k">11</div>
+                <div class="l">22</div>
+                <div class="m">33</div>
+                <div class="n">44</div>
+                <div class="o">55</div>
+                <div class="p">66</div>
+            </div>
+
+
+            <br><Br><h1>Shorthand of grid row/column</h1>
+                <div class="r">
+                    <div class="s">111</div>
+                    <div class="t">222</div>
+                    <div class="u">333</div>
+                    <div class="v">444</div>
+                    <div class="w">555</div>
+                    <div class="x">666</div>
+                </div>
+</body>
+</html>

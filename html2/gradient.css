@@ -1,0 +1,129 @@
+#a{
+    height: 250px;
+    width: 800px;
+    border:10px solid black;
+    padding: 30px;
+    font-size: 40px;
+    margin-top: 30px;
+    background: linear-gradient(brown,white);        /*simple gradient*/
+    background: linear-gradient(blue, purple,white);       /* simple gradient of three colors*/ 
+    background: linear-gradient(to right, black,white);       /* gradient with direction*/ 
+    background: linear-gradient(to top, black,brown,yellow,white);  /*gradient with direction & mutiple colors */ 
+    background: linear-gradient(45deg,red,blue,brown,pink,green);  /*gradient using degree(deg) & multiple color spread from corner*/
+    background: linear-gradient(-45deg,red,blue,brown,pink,green);   /*gradient using degree(deg) & multiple color spread from opposite corner*/
+    background: linear-gradient(white,rgba(255,0,0,0.6));   /*gradient of using rbga it means background img will be appear little bit*/
+    background: repeating-linear-gradient(to right,brown,rgb(112, 219, 13) 10%,white 20%); /* one gradient will be appear repeat (again again) throgh the gradient patti */
+}
+
+
+#b{
+    height: 250px;
+    width: 800px;
+    border:10px solid black;
+    padding: 30px;
+    font-size: 40px;
+    background: radial-gradient(brown,pink,blue);   /* gradient round according to box */ 
+    background: radial-gradient(brown 0%,pink 40%,blue 80%); /* set gradient throgh the (%)*/
+    background: radial-gradient(square, brown 10%,pink 40%,blue 80%); 
+    background: radial-gradient(closest-side at 20% 70%,pink,brown,purple); /* gradient (circle) go according (%) & use of 'closest side at'  */
+    background:repeating-radial-gradient(rgb(226, 95, 95),rgb(229, 171, 235) 10%,rgb(85, 243, 217) 15%); /* gradient circle patti use of %  */
+    background:repeating-radial-gradient(circle, rgb(226, 95, 95),rgb(229, 171, 235) 50px,rgb(85, 243, 217) 100px);   /* gradient with direction circle & use of px  */
+}
+
+
+.c{
+    height: 500px;
+    width: 500px;
+    border:5px solid black;
+    color: white;
+    background-image: linear-gradient(to left,rgb(23, 212, 32),rgb(14, 18, 230),rgb(238, 148, 14)),url(butterfly.jpeg);
+    background-blend-mode: screen;
+    background-blend-mode: overlay;
+    background-blend-mode: darken;
+    background-blend-mode: hard-light;
+    background-blend-mode: hue;
+    background-blend-mode: difference;
+    background-blend-mode: saturation;
+    background-blend-mode: multiply;
+    background-blend-mode: lighten;
+    background-blend-mode: color-dodge;
+    background-blend-mode: color-burn;
+    background-blend-mode: soft-light;
+    background-blend-mode: exclusion;
+    background-blend-mode: luminosity;
+    background-blend-mode: color;
+}
+
+
+.d{
+    height: 220px;
+    width: 500px;
+    border:5px solid black;
+    background-image:url(butterfly.jpeg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    background-color: red;
+    text-align: center;
+    font-size: 55px;
+    margin-top: 150px;    
+    mix-blend-mode: overlay;
+    mix-blend-mode: screen;
+    mix-blend-mode: darken;
+    mix-blend-mode: hard-light;
+    mix-blend-mode: hue;
+    mix-blend-mode: difference;
+    mix-blend-mode: saturation;
+    mix-blend-mode: multiply;
+    mix-blend-mode: lighten;
+    mix-blend-mode: color-dodge;
+    mix-blend-mode: color-burn;
+    mix-blend-mode: soft-light;
+    mix-blend-mode: exclusion;
+    mix-blend-mode: luminosity;
+    mix-blend-mode: color;
+
+}
+
+.hj{
+    height: 640px;
+    width: 640px;
+    border: 2px solid black;
+    background-image: url(flowers2.jpeg);
+    background-size: cover;
+   
+}
+
+.tk{
+    height: 500px;
+    width: 640px;
+    border: 2px solid black;
+    font-size: 80px;
+    text-align: center;
+    color: rgb(243, 166, 205);
+}
+
+.tk h5{
+    font-size: 80px;
+    margin-top:-180px;
+    color: brown;
+    margin-left: 10px;
+    mix-blend-mode: screen;
+    mix-blend-mode: overlay;
+    mix-blend-mode: soft-light;
+    mix-blend-mode: hard-light;
+    mix-blend-mode: color;
+    mix-blend-mode: color-burn;
+    mix-blend-mode: color-dodge;
+    mix-blend-mode: darken;
+    mix-blend-mode: difference;
+    mix-blend-mode: exclusion;
+    mix-blend-mode: hue;
+    mix-blend-mode: lighten;
+    mix-blend-mode: luminosity;
+    mix-blend-mode: multiply;
+    mix-blend-mode: saturation;
+}

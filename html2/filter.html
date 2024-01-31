@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a{
+            filter: blur(5px);
+            float: left;
+            margin-top: 20px;
+        }
+        
+        #b{
+            filter: blur(50px);
+            float: right;
+            margin-top: 20px;
+        }
+
+        #c{
+            filter: brightness(30%);
+            filter: brightness(200%);
+            float: left;
+            margin-top: 20px;
+        }
+
+        #d{
+            filter: contrast(30%);
+            float: right;
+            margin-top: 20px;
+        }
+
+        #e{
+            filter: drop-shadow(30px -10px 10px rgb(114, 4, 22));
+            float: left;
+            margin-top: 20px;
+        }
+
+        #f{
+            filter:grayscale(30%);
+            filter:grayscale(100%);
+            float: right;
+            margin-top: 20px;
+        }
+
+        #g{
+            filter:hue-rotate(200deg);
+            filter: hue-rotate(50deg);
+            filter: hue-rotate(300deg);
+            float: left;
+            margin-top: 20px;
+        }
+
+        #h{
+            filter:invert(100%);
+            float: right;
+            margin-top: 20px;
+        }
+
+        #i{
+            filter:opacity(30%);
+            float: left;
+            margin-top: 20px;
+        }
+
+        #j{
+            filter:saturate(30%);
+            filter: saturate(300%);
+            float: right;
+            margin-top: 20px;
+        }
+
+        #k{
+            filter:sepia(50%);
+            float: left;
+            margin-top: 20px;
+        }
+
+        #l{
+            filter:blur(5px) sepia(100%);
+            filter:blur(5px) sepia(50%);
+            float: right;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img id="a" height="500px" width="600px" src="flowers2.jpeg">   <!-- kam blur (5px)  -->
+
+    <img id="b" height="500px" width="600px" src="flowers2.jpeg">     <!-- jyada blur (50px)  -->
+
+    <img id="c" height="500px" width="600px" src="flowers2.jpeg">     <!-- dark/black brightness (0% to 100%)  -->
+
+    <img id="d" height="500px" width="600px" src="flowers2.jpeg">     <!-- same as brightness (50% to infinite)  -->
+
+    <img id="e" height="500px" width="600px" src="flowers2.jpeg">     <!-- light brightness (50% to infinite)  -->
+
+    <img id="f" height="500px" width="600px" src="flowers2.jpeg">     <!-- color will be gray(black & white) jaise jaise No. badega vaise vaise color convert into gray -->
+
+    <img id="g" height="500px" width="600px" src="flowers2.jpeg">     <!-- hue-rotate-- color change of whole img here we use  (deg) according to alag-alag no. ex--  50deg,100deg,200deg, 300deg  up to only 365deg-->
+
+
+    <img id="h" height="500px" width="600px" src="flowers2.jpeg">  <!-- invert-- use for sapne me aata hai o color  0% is by default value & here is no negative no. & up to 100%-->
+
+    <img id="i" height="500px" width="600px" src="flowers2.jpeg">   <!-- opacity-- it shows background color  & it's transparent-->
+
+    <img id="j" height="500px" width="600px" src="flowers2.jpeg">  <!--  saturate-- when it's 0% then it shows gray color (black/white) & 100 is by default &  when it's >100% it shows dark according the img/ img color -->
+    
+
+    <img id="k" height="500px" width="600px" src="flowers2.jpeg">  <!-- sepia-- up to 100% 0 is by default 50% is medium -->
+
+    <img id="l" height="500px" width="600px" src="flowers2.jpeg">
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        .calculator-container {
+            width: 250px;
+            margin: 50px auto;
+            border: 2px solid #ddd; /* Add border styling */
+            padding: 10px; /* Add padding for better appearance */
+        }
+
+        input[type="button"] {
+            width: 50px;
+            height: 50px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="calculator-container">
+        <h2>Simple Calculator</h2>
+
+        <table>
+            <tr>
+                <td colspan="4"><input type="text" id="display" disabled></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="addToDisplay('1')"></td>
+                <td><input type="button" value="2" onclick="addToDisplay('2')"></td>
+                <td><input type="button" value="3" onclick="addToDisplay('3')"></td>
+                <td><input type="button" value="/" onclick="addToDisplay('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="addToDisplay('4')"></td>
+                <td><input type="button" value="5" onclick="addToDisplay('5')"></td>
+                <td><input type="button" value="6" onclick="addToDisplay('6')"></td>
+                <td><input type="button" value="-" onclick="addToDisplay('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="addToDisplay('7')"></td>
+                <td><input type="button" value="8" onclick="addToDisplay('8')"></td>
+                <td><input type="button" value="9" onclick="addToDisplay('9')"></td>
+                <td><input type="button" value="+" onclick="addToDisplay('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="C" onclick="clearDisplay()"></td>
+                <td><input type="button" value="0" onclick="addToDisplay('0')"></td>
+                <td><input type="button" value="." onclick="addToDisplay('.')"></td>
+                <td><input type="button" value="=" onclick="calculate()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Backspace" onclick="backspace()"></td>
+                <td><input type="button" value="%" onclick="addToDisplay('%')"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        var lastOperator = null;
+
+        function addToDisplay(value) {
+            // Check if the last symbol was an operator
+            if (lastOperator !== null && ['+', '-', '*', '/'].includes(value) && ['+', '-', '*', '/'].includes(lastOperator)) {
+                // Replace the last character with the new value
+                var currentDisplay = document.getElementById("display").value;
+                document.getElementById("display").value = currentDisplay.slice(0, -1) + value;
+            } else {
+                document.getElementById("display").value += value;
+            }
+
+            lastOperator = value;
+        }
+
+        function clearDisplay() {
+            document.getElementById("display").value = "";
+            lastOperator = null;
+        }
+
+        function calculate() {
+            try {
+                document.getElementById("display").value = eval(document.getElementById("display").value);
+            } catch (error) {
+                document.getElementById("display").value = "Error";
+            }
+        }
+
+        function backspace() {
+            var currentDisplay = document.getElementById("display").value;
+            document.getElementById("display").value = currentDisplay.slice(0, -1);
+        }
+    </script>
+
+</body>
+</html>
+
+</body>
+</html>

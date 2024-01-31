@@ -1,0 +1,155 @@
+/*border-top thin
+div{
+    height: 150px;
+    width: 150px;
+    border: 5px solid black;
+    border-radius: 50%;
+    border-top: 50px;
+    
+}
+*/
+
+
+
+/*border-bottom thin
+div{
+    height: 150px;
+    width: 150px;
+    border: 5px solid black;
+    border-radius: 50%;
+    border-bottom: 50px;
+    
+}
+*/
+
+
+/*single border in one side to the element (box or circle )
+div{
+    height: 150px;
+    width: 150px;
+    border-left: 5px solid black;
+    background-color: pink;       
+}
+*/
+
+
+
+/*different border in one side & another side different color & size to the border to the element (box or circle )
+div{
+    height: 150px;
+    width: 150px;
+    border:2px solid brown;
+    border-top: 10px solid black;
+    background-color: pink;  
+    border-radius: 50%;     
+}
+*/
+
+
+/*make loader circle
+div{
+    height: 150px;
+    width: 150px;
+    border:10px solid brown;
+    border-top: 10px solid black;
+    background-color: pink;  
+    border-radius: 50%;   
+    animation-name: loader;
+    animation-duration: 2s;
+    animation-timing-function:steps(6);
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;  
+}
+
+@keyframes loader{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+*/
+
+
+/*loader in gray color & small --solid line
+div{
+    height: 10px;
+    width: 10px;
+    border:3px solid lightgray;
+    border-top: 3px solid darkgrey;
+    background-color:white;  
+    border-radius: 50%;   
+    animation-name: loader;
+    animation-duration: 2s;
+    animation-timing-function:steps(6);
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;  
+}
+
+@keyframes loader{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+*/
+
+
+
+/*dotted border--loader
+div{
+    height: 10px;
+    width: 10px;
+    border:3px dotted lightgray;
+    border-top: 3px dotted darkgrey;
+    background-color:white;  
+    border-radius: 50%;   
+    animation-name: loader;
+    animation-duration: 2s;
+    animation-timing-function:steps(6);
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;  
+}
+
+@keyframes loader{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+*/
+
+
+
+dashed -loader
+div{
+    height: 10px;
+    width: 10px;
+    border:3px dashed lightgray;
+    border-top: 3px dashed darkgrey;
+    background-color:white;  
+    border-radius: 50%;   
+    animation-name: loader;
+    animation-duration: 2s;
+    animation-timing-function:steps(6);
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;  
+}
+
+@keyframes loader{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

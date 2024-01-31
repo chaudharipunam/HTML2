@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 30px;
+        }
+
+        /*A[attr]*/
+        img[height]{
+            border: 10px dotted seagreen;
+            margin-left: 100px;
+        }
+
+        /*A[attr=val]*/
+        input[type="text"]{
+            font-size: 30px;
+        }
+
+        /*A[attr^=val]*/
+        img[title^="Rose"]{
+            box-shadow: 10px 10px 5px brown;
+        }
+
+        /*A[attr|=val]*/
+        input[value|="Your"]{
+            color: brown;
+        }
+
+        /*A[attr$=val]*/
+        img[src$=".png"]{
+            height: 300px;
+            border:10px double darkgreen ;
+        }
+
+        /*A[attr*=val]*/
+        img[alt*=chi]{
+            border-radius: 50%;
+        }
+
+        /*A[attr~=val]*/
+        img[alt~="bohot"]{
+            height: 200px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore fugit omnis debitis quae iste maiores, deserunt praesentium illum odit optio suscipit laboriosam labore perspiciatis, ut soluta dolor delectus rerumorem ipsum dolor sit amet <a href="https://chat.openai.com/">consectetur</a> elit. Quam tempore fugit omnis debitis quae iste maiores, deserunt praesentium illum odit optio suscipit laboriosam labore perspiciatis, ut soluta dolor delectus rerumorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore fugit omnis debitis quae iste maiores, deserunt praesentium illum odit optio suscipit. labore perspiciatis, ut soluta dolor delectus rerumorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore fugit omnis debitis quae iste maiores, deserunt praesentium illum odit optio suscipit laboriosam labore perspiciatis, ut soluta dolor delectus rerum?</div><br><br>
+
+    <img src="butterfly.jpeg" width="400px" alt="image of butterfly" title="Rose Flower"><br><Br>
+
+    <div class="b">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus velit deleniti consequuntur sequi qui vitae consectetur vero repellendus et, voluptates,  doloribus ipsum temporibus dignissimos incidunt neque beatae, laboriosam assumenda?
+        Accusantium, deleniti. Maiores doloremque quaerat deserunt, vitae, laudantium iste dolores facilis, labore quam iure et reprehenderit eum culpa dolore quod harum. Tenetur laboriosam expedita placeat maiores officiis cupiditate sapiente ratione.
+
+    </div><br><br>
+<img src="video.png">
+    <img src="flowers2.jpeg" height="400px"; width="600px" ><br><br>
+    <input type="text" placeholder="Name" >
+    <input type="text" value="Your- Name" >
+    <img src="box8.jpg" alt="box chi picture">
+
+    <img src="dil+frame.jpg" alt="bohot sare dil hai">
+</body>
+</html>

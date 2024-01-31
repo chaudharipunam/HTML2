@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    margin: 0;
+}
+
+        #a{
+            height: 500px;
+            width: 500px;
+            clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 60% 40%);    /*radius (size)  at x-axis ,  y-axis*/
+
+        }
+
+        #b{
+            height: 500px;
+            width: 500px;
+            clip-path:ellipse(20% 50% at 80% 50%)
+        }
+
+        #c{
+            height: 500px;
+            width: 500px;
+            clip-path:polygon(50% 0%, 0% 100%, 100% 100%)
+        }
+
+        #d{
+            height: 500px;
+            width: 500px;
+            clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        }
+
+        #e{
+            height: 500px;
+            width: 500px;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+
+        
+
+        #f{
+            float: left;
+            clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+        }
+
+        #i{
+            float: left;
+            clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+            shape-outside: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+            shape-margin: 20px;
+        }
+
+
+        #k{
+            float: left;
+            clip-path: circle(40% at 36% 50%);
+            shape-outside:circle(40% at 36% 50%);
+            shape-margin: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <img id="a" src="flowers2.jpeg">
+    <img id="b" src="flowers2.jpeg">
+    <img id="c" src="flowers2.jpeg"><br>
+    <img id="d" src="flowers2.jpeg"><br>
+    <img id="e" src="flowers2.jpeg"><br>
+<h1>use only clip path prperty which is paragraph/text according to pahle wali square photo ke size ke hisab se</h1>
+    <img id="f" height="350px" width="450px" src="flowers2.jpeg">
+    
+    <p id="g"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid natus tempore officia, totam unde suscipit facere, temporibus molestias eaque quasi ad repudiandae exercitationem architecto animi ullam sapiente minima eius blanditiis!
+    Libero ratione minus aut quis maxime. Delectus esse ipsum suscipit beatae accusamus totam vitae amet, aspernatur recusandae? Mollitia, repellendus consequuntur architecto, officia soluta natus veniam ipsum laudantium qui, aspernatur pariatur.
+    Quia eaque minima vel architecto iste ut laboriosam nobis sit minus dolorem pariatur deleniti cupiditate non, officia eum, doloribus mollitia ducimus, voluptatibus deserunt reiciendis perferendis dolor dignissimos! Sapiente, sit adipisci.
+    Quibusdam dolor, omnis iure dolorum magnam ab quas! Odio ea aspernatur ipsam voluptatibus dolorum unde aliquam sint, quidem nostrum beatae reiciendis voluptate cum facere, ducimus ratione accusantium nihil, nulla labore.
+    Nisi necessitatibus cupiditate eum debitis odio aspernatur nobis, saepe dolorum repellendus laborum dicta optio obcaecati distinctio. Porro, labore. Optio error consequatur iure illum nsicing elit. Aliquid natus tempore officia, totam unde suscipit facere, temporibus molestias eaque quasi ad repudiandae exercitationem architecto animi ullam sapiente minima eius blanditiis!
+    Libero ratione minus aut quis maxime. Delectus esse ipsum suscipit beatae accusamus totam vitae amet, aspernatur recusandae? Mollitia, repellendus consequuntur architecto, officia soluta natus veniam ipsum laudantium qui, aspernatur pariatur.
+    Quia eaque minima vel architecto iste ut laboriosam nobis sit minus dolorem pariatur deleniti cupiditate non, officia eum, doloribus mollitia ducimus, voluptatibus deserunt reiciendis perferendis dolor dignissimos! Sapiente, sit adipisci.
+    Quibusdam dolor, omnis iure dolorum magnam ab quas! Odio ea aspernatur ipsam voluptatibus dolorum unde aliquam sint, quidem nostrum beatae reiciendis voluptate cum facere, ducimus ratione accusantium nihil, nulla labore.
+    Nisi necessitatibus cupiditate eum debitis odio aspernatur nobis, saepe dolorum repellendus laborum dicta optio obcaecati distinctio. Porro, labore. Optio error consequatur iure illum nsicing elit. Aliquid natus tempore officia, totam unde suscipit facere, temporibus molestias eaque quasi ad repudiandae exercitationem architecto animi ullam sapiente minima eius blanditiis!
+    Libero ratione minus aut quis maxime. Delectus esse ipsum suscipit beatae accusamus totam vitae amet, aspernatur recusandae? Mollitia, repellendus consequuntur architecto, officia soluta natus veniam ipsum laudantium qui, aspernatur pariatur.
+    Quia eaque minima vel architecto iste ut laboriosam nobis sit minus dolorem pariatur deleniti cupiditate non, officia eum, doloribus mollitia ducimus, voluptatibus deserunt reiciendis perferendis dolor dignissimos! Sapiente, sit adipisci.
+    Quibusdam dolor, omnis iure dolorum magnam ab quas! Odio ea aspernatur ipsam voluptatibus dolorum unde aliquam sint, quidem nostrum beatae reiciendis voluptate cum facere, ducimus ratione accusantium nihil, nulla labore.
+    Nisi necessitatibus cupiditate eum debitis odio aspernatur nobis, saepe dolorum repellendus laborum dicta optio obcaecati distinctio. Porro, labore. Optio error consequatur iure illum nsicing elit. Aliquid natus tempore officia, totam unde suscipit facere, temporibus molestias eaque quasi ad repudiandae exercitationem architecto animi ullam sapiente minima eius blanditiis!
+    Libero ratione minus aut quis maxime. Delectus esse ipsum suscipit beatae accusamus totam vitae amet, aspernatur recusandae? Mollitia, repellendus consequuntur architecto, officia soluta natus veniam ipsum laudantium qui, aspernatur pariatur.
+    Quia eaque minima vel architecto iste ut laboriosam nobis sit minus dolorem pariatur deleniti cupiditate non, officia eum, doloribus mollitia ducimus, voluptatibus deserunt reiciendis perferendis dolor dignissimos! Sapiente, sit adipisci.
+    Quibusdam dolor, omnis iure dolorum magnam ab quas! Odio ea aspernatur ipsam voluptatibus dolorum unde aliquam sint, quidem nostrum beatae reiciendis voluptate cum facere, ducimus ratione accusantium nihil, nulla labore.
+    Nisi necessitatibus cupiditate eum debitis odio aspernatur nobis, saepe dolorum repellendus laborum dicta optio obcaecati distinctio. Porro, labore. Optio error consequatur iure illum nesciunt nam id sunt nisi autem fuga?</p><br><br><br><Br>
+
+
+        <h1>use outside shape proerty for clip path prperty which is use for paragraph/text will be according to img/div ke size ke hisab se NOT pahle wali square photo ke size ke hisab se</h1>
+        <img id="i" height="350px" width="450px" src="flowers2.jpeg">
+        
+        <p id="h"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid natus tempore officia, totam unde suscipit facere, temporibus molestias eaque quasi ad repudiandae exercitationem architecto animi ullam sapiente minima eius blanditiis!
+        Libero ratione minus aut quis maxime. Delectus esse ipsum suscipit beatae accusamus totam vitae amet, aspernatur recusandae? Mollitia, repellendus consequuntur architecto, officia soluta natus veniam ipsum laudantium qui, aspernatur pariatur.
+        Quia eaque minima vel architecto iste ut laboriosam nobis sit minus dolorem pariatur deleniti cupiditate non, officia eum, doloribus mollitia ducimus, voluptatibus deserunt reiciendis perferendis dolor dignissimos! Sapiente, sit adipisci.
+        Quibusdam dolor, omnis iure dolorum magnam ab quas! Odio ea aspernatur ipsam voluptatibus dolorum unde aliquam sint, quidem nostrum beatae reiciendis voluptate cum facere, ducimus ratione accusantium nihil, nulla labore.
+        Nisi necessitatibus cupiditate eum debitis odio aspernatur nobis, saepe dolorum repellendus laborum dicta optio obcaecati distinctio. Porro, labore. Optio error consequatur iure illum nsicing elit. Aliquid natus tempore officia, totam unde suscipit facere, temporibus molestias eaque quasi ad repudiandae exercitationem architecto animi ullam sapiente minima eius blanditiis!
+        Libero ratione minus aut quis maxime. Delectus esse ipsum suscipit beatae accusamus totam vitae amet, aspernatur recusandae? Mollitia, repellendus consequuntur architecto, officia soluta natus veniam ipsum laudantium qui, aspernatur pariatur.
+        Quia eaque minima vel architecto iste ut laboriosam nobis sit minus dolorem pariatur deleniti cupiditate non, officia eum, doloribus mollitia ducimus, voluptatibus deserunt reiciendis perferendis dolor dignissimos! Sapiente, sit adipisci.
+        Quibusdam dolor, omnis iure dolorum magnam ab quas! Odio ea aspernatur ipsam voluptatibus dolorum unde aliquam sint, quidem nostrum beatae reiciendis voluptate cum facere, ducimus ratione accusantium nihil, nulla labore.
+        Nisi necessitatibus cupiditate eum debitis odio aspernatur nobis, saepe dolorum repellendus laborum dicta optio obcaecati distinctio. Porro, labore. Optio error consequatur iure illum nsicing elit. Aliquid natus tempore officia, totam unde suscipit facere, temporibus molestias eaque quasi ad repudiandae exercitationem architecto animi ullam sapiente minima eius blanditiis!
+        Libero ratione minus aut quis maxime. Delectus esse ipsum suscipit beatae accusamus totam vitae amet, aspernatur recusandae? Mollitia, repellendus consequuntur architecto, officia soluta natus veniam ipsum laudantium qui, aspernatur pariatur.
+        Quia eaque minima vel architecto iste ut laboriosam nobis sit minus dolorem pariatur deleniti cupiditate non, officia eum, doloribus mollitia ducimus, voluptatibus deserunt reiciendis perferendis dolor dignissimos! Sapiente, sit adipisci.
+        Quibusdam dolor, omnis iure dolorum magnam ab quas! Odio ea aspernatur ipsam voluptatibus dolorum unde aliquam sint, quidem nostrum beatae reiciendis voluptate cum facere, ducimus ratione accusantium nihil, nulla labore.
+        Nisi necessitatibus cupiditate eum debitis odio aspernatur nobis, saepe dolorum repellendus laborum dicta optio obcaecati distinctio. Porro, labore. Optio error consequatur iure illum nsicing elit. Aliquid natus tempore officia, totam unde suscipit facere, temporibus molestias eaque quasi ad repudiandae exercitationem architecto animi ullam sapiente minima eius blanditiis!
+        Libero ratione minus aut quis maxime. Delectus esse ipsum suscipit beatae accusamus totam vitae amet, aspernatur recusandae? Mollitia, repellendus consequuntur architecto, officia soluta natus veniam ipsum laudantium qui, aspernatur pariatur.
+        Quia eaque minima vel architecto iste ut laboriosam nobis sit minus dolorem pariatur deleniti cupiditate non, officia eum, doloribus mollitia ducimus, voluptatibus deserunt reiciendis perferendis dolor dignissimos! Sapiente, sit adipisci.
+        Quibusdam dolor, omnis iure dolorum magnam ab quas! Odio ea aspernatur ipsam voluptatibus dolorum unde aliquam sint, quidem nostrum beatae reiciendis voluptate cum facere, ducimus ratione accusantium nihil, nulla labore.
+        Nisi necessitatibus cupiditate eum debitis odio aspernatur nobis, saepe dolorum repellendus laborum dicta optio obcaecati distinctio. Porro, labore. Optio error consequatur iure illum nesciunt nam id sunt nisi autem fuga?</p><br><Br><br><Br><Br>
+
+            <h1>one more example of outside shape proerty but jo clip path me jo value dete ho vahi value shape-outside property me bhi dena tbhi ans aayega  & then shape-margin</h1>
+            <img id="k" height="350px" width="450px" src="flowers2.jpeg">
+            
+            <p id="j"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid natus tempore officia, totam unde suscipit facere, temporibus molestias eaque quasi ad repudiandae exercitationem architecto animi ullam sapiente minima eius blanditiis!
+            Libero ratione minus aut quis maxime. Delectus esse ipsum suscipit beatae accusamus totam vitae amet, aspernatur recusandae? Mollitia, repellendus consequuntur architecto, officia soluta natus veniam ipsum laudantium qui, aspernatur pariatur.
+            Quia eaque minima vel architecto iste ut laboriosam nobis sit minus dolorem pariatur deleniti cupiditate non, officia eum, doloribus mollitia ducimus, voluptatibus deserunt reiciendis perferendis dolor dignissimos! Sapiente, sit adipisci.
+            Quibusdam dolor, omnis iure dolorum magnam ab quas! Odio ea aspernatur ipsam voluptatibus dolorum unde aliquam sint, quidem nostrum beatae reiciendis voluptate cum facere, ducimus ratione accusantium nihil, nulla labore.
+            Nisi necessitatibus cupiditate eum debitis odio aspernatur nobis, saepe dolorum repellendus laborum dicta optio obcaecati distinctio. Porro, labore. Optio error consequatur iure illum nsicing elit. Aliquid natus tempore officia, totam unde suscipit facere, temporibus molestias eaque quasi ad repudiandae exercitationem architecto animi ullam sapiente minima eius blanditiis!
+            Libero ratione minus aut quis maxime. Delectus esse ipsum suscipit beatae accusamus totam vitae amet, aspernatur recusandae? Mollitia, repellendus consequuntur architecto, officia soluta natus veniam ipsum laudantium qui, aspernatur pariatur.
+            Quia eaque minima vel architecto iste ut laboriosam nobis sit minus dolorem pariatur deleniti cupiditate non, officia eum, doloribus mollitia ducimus, voluptatibus deserunt reiciendis perferendis dolor dignissimos! Sapiente, sit adipisci.
+            Quibusdam dolor, omnis iure dolorum magnam ab quas! Odio ea aspernatur ipsam voluptatibus dolorum unde aliquam sint, quidem nostrum beatae reiciendis voluptate cum facere, ducimus ratione accusantium nihil, nulla labore.
+            Nisi necessitatibus cupiditate eum debitis odio aspernatur nobis, saepe dolorum repellendus laborum dicta optio obcaecati distinctio. Porro, labore. Optio error consequatur iure illum nsicing elit. Aliquid natus tempore officia, totam unde suscipit facere, temporibus molestias eaque quasi ad repudiandae exercitationem architecto animi ullam sapiente minima eius blanditiis!
+            Libero ratione minus aut quis maxime. Delectus esse ipsum suscipit beatae accusamus totam vitae amet, aspernatur recusandae? Mollitia, repellendus consequuntur architecto, officia soluta natus veniam ipsum laudantium qui, aspernatur pariatur.
+            Quia eaque minima vel architecto iste ut laboriosam nobis sit minus dolorem pariatur deleniti cupiditate non, officia eum, doloribus mollitia ducimus, voluptatibus deserunt reiciendis perferendis dolor dignissimos! Sapiente, sit adipisci.
+            Quibusdam dolor, omnis iure dolorum magnam ab quas! Odio ea aspernatur ipsam voluptatibus dolorum unde aliquam sint, quidem nostrum beatae reiciendis voluptate cum facere, ducimus ratione accusantium nihil, nulla labore.
+            Nisi necessitatibus cupiditate eum debitis odio aspernatur nobis, saepe dolorum repellendus laborum dicta optio obcaecati distinctio. Porro, labore. Optio error consequatur iure illum nsicing elit. Aliquid natus tempore officia, totam unde suscipit facere, temporibus molestias eaque quasi ad repudiandae exercitationem architecto animi ullam sapiente minima eius blanditiis!
+            Libero ratione minus aut quis maxime. Delectus esse ipsum suscipit beatae accusamus totam vitae amet, aspernatur recusandae? Mollitia, repellendus consequuntur architecto, officia soluta natus veniam ipsum laudantium qui, aspernatur pariatur.
+            Quia eaque minima vel architecto iste ut laboriosam nobis sit minus dolorem pariatur deleniti cupiditate non, officia eum, doloribus mollitia ducimus, voluptatibus deserunt reiciendis perferendis dolor dignissimos! Sapiente, sit adipisci.
+            Quibusdam dolor, omnis iure dolorum magnam ab quas! Odio ea aspernatur ipsam voluptatibus dolorum unde aliquam sint, quidem nostrum beatae reiciendis voluptate cum facere, ducimus ratione accusantium nihil, nulla labore.
+            Nisi necessitatibus cupiditate eum debitis odio aspernatur nobis, saepe dolorum repellendus laborum dicta optio obcaecati distinctio. Porro, labore. Optio error consequatur iure illum nesciunt nam id sunt nisi autem fuga?</p>
+</body>
+</html>
