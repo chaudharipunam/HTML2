@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a{
+            background-color: rgb(53, 44, 46);
+            font-weight: 800;
+            font-size: 20px;
+            border: 1px solid black;
+            line-height: 50px;
+            border-radius: 5px;
+            color: beige;
+        }
+
+
+        #b{
+            background-color: pink;
+            font-weight: 800;
+            font-size: 20px;
+            border: 1px solid black;
+            line-height: 26px;
+            border-radius: 5px;
+            -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+        }
+
+        #c{
+            background-color: rgb(114, 228, 120);
+            font-weight: 800;
+            font-size: 20px;
+            border: 2px solid black;
+            line-height: 35px;
+            border-radius: 5px;
+            box-decoration-break: slice;  
+        }
+
+        #h{
+            font-weight: 800;
+            font-size: 20px;
+            quotes: "<" ">";
+        }
+
+        #i{
+            font-weight: 800;
+            font-size: 20px;
+            quotes: "«" "»" "'" "'";
+        }
+    </style>
+</head>
+<body>
+    <span id="a">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae suscipit ex illum architecto cumque ab ipsam itaque, . 
+    </span>
+<br><br>
+
+<h1>Box-Decoration-Break:Clone  Make sure: use preffix before this'Box-Decoration-Break:Clone'</h1>
+    <span id="b">
+        Lorem, ipsum dolor <br>sit amet consectetur <br>adipisicing elit. Beatae<br> suscipit ex <br>illum architecto cumque<br> ab ipsam itaque, . 
+    </span>
+    <br><br>
+    <h1>Box-Decoration-Break:Slice</h1>
+    <span id="c">
+        Lorem, ipsum dolor <br>sit amet consectetur <br>adipisicing elit. Beatae<br> suscipit ex <br>illum architecto cumque<br> ab ipsam itaque, . 
+    </span>
+<br><Br><Br>
+<h1>Quotes property</h1>
+    <q id="f">Hello poonam! I am Rutu.</q><br>
+    <q id="g">Hello <q>poonam</q>! I am Rutu.</q>
+
+    <br><br><br>
+    <h1>Quotes property use of css--we can use any char</h1>
+    
+    <q id="h">Hello poonam! I am Rutu.</q><br>
+    <q id="i">Hello <q>poonam</q>! I am Rutu.</q>
+
+</body>
+</html>

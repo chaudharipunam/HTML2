@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="transform_3d.css">
+
+    <style>
+        body{
+            background-color: #eee;
+        }
+
+        .card{
+            width: 300px;
+            height: 300px;
+            border: 0px solid black;
+            margin: 200px;
+            perspective: 400px;
+        }
+
+        .content{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+        }
+
+        .card:hover .content{
+            transform: rotateY(180deg);
+        }
+
+        .front,
+        .back{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: #fff;
+            color: tomato;
+            font-size: 60px;
+            text-align: center;
+            line-height: 300px;
+            border-radius: 15px;
+            backface-visibility: hidden;
+        }
+
+        .back{
+            background: tomato;
+            color: #fff;
+            font-size: 60px;
+            text-align: center;
+            line-height: 300px;
+            transform: rotateY(180deg);
+
+        }
+    </style>
+</head>
+<body><h1>perspective property which use with transform property otherwise can't use <br>method 1</h1>
+    <div class="a">
+        <div class="b">Box</div>
+    </div>
+<h1>Or we can use perspectivw property  use like this both are same  but method is different
+    <br>method 2
+</h1>
+    <div class="c">
+        <div class="d">Box</div>
+    </div>
+
+
+    <div class="e">
+        <div class="f">Preserve 3D</div>
+    </div>
+
+    <div class="g">
+        <div class="h">Preserve 3D</div>
+    </div>
+
+
+
+<h1>Visibility-put the cursor on the box it will be appear backpart of box</h1>
+    <div class="card">
+        <div class="content">
+            <div class="front">Front</div>
+            <div class="back">Back</div>
+        </div>
+    </div>
+</body>
+</html>

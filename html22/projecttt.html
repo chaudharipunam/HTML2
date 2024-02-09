@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" href="projecttt.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="sub-container">
+            <div class="input-div">
+                <h1>Create Group</h1>
+            </div>
+            <div class="input-div">
+                <label>Enter Group Name</label>
+                <input type="text" id="groupname" name="groupname" placeholder="Enter group name" />
+            </div>
+            <div class="input-div">
+                <label>Group Leader Name</label>
+                <input type="text" id="leadername" name="leadername" placeholder="Enter Leader name" />
+            </div>
+            <div class="input-div">
+                <label>Add Project Link</label>
+                <input type="text" id="link" name="link" placeholder="Add project link " />
+            </div>
+            <div class="input-div">
+                <label>Enter Date</label>
+                <input type="date" id="date" name="date" placeholder="date of project" />
+            </div>
+            <div class="input-div">
+                <label>Add Group Members</label>
+                <input type="text" id="member" name="member" placeholder="Add Group Members" />
+            </div>
+            <button class="create-group" onclick="createGroup()">Create Group</button>
+            <button class="add-member">Add Member</button>
+        </div>
+    </div>
+    
+    <div class="search-container">
+        <label for="search" style="margin-right: 10px;">Search Groups:</label>
+        <input type="text" id="search" class="search-bar" oninput="searchGroups()" placeholder="Search by group name">
+    </div>
+    
+    <table id="groupTable">
+        <thead>
+            <tr>
+                <th>Group Name</th>
+                <th>Leader Name</th>
+                <th>Project Link</th>
+                <th>Date</th>
+                <th>Group Leader</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be dynamically added here -->
+        </tbody>
+    </table>
+    
+    <script>
+        function createGroup() {
+            // Get input values
+            var groupName = document.getElementById("groupname").value;
+            var leaderName = document.getElementById("leadername").value;
+            var projectLink = document.getElementById("link").value;
+            var date = document.getElementById("date").value;
+            var groupLeader = document.getElementById("member").value;
+    
+            // Create a new table row
+            var table = document.getElementById("groupTable").getElementsByTagName('tbody')[0];
+            var newRow = table.insertRow(table.rows.length);
+    
+            // Insert cell values into the row
+            var cells = [];
+            for (var i = 0; i < 5; i++) {
+                cells[i] = newRow.insertCell(i);
+            }
+    
+            cells[0].innerHTML = groupName;
+            cells[1].innerHTML = leaderName;
+            cells[2].innerHTML = projectLink;
+            cells[3].innerHTML = date;
+            cells[4].innerHTML = groupLeader;
+    
+            // Clear input fields
+            document.getElementById("groupname").value = "";
+            document.getElementById("leadername").value = "";
+            document.getElementById("link").value = "";
+            document.getElementById("date").value = "";
+            document.getElementById("member").value = "";    
+        }
+    
+        function searchGroups() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("search");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("groupTable");
+            tr = table.getElementsByTagName("tr");
+    
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0]; // Assuming group name is in the first column
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

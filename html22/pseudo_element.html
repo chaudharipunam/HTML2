@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        p{
+            color:green
+        }
+
+        p::first-letter{
+            font-size: 40px;
+            font-weight: 800;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+
+        p::first-line{
+            background-color: pink;
+            font-size: 25px;
+        }
+        
+        li::selection{
+            background-color: rgb(255, 127, 170);
+        }
+
+        ::placeholder{
+            color: brown;
+        }
+
+        input[type="password"]::placeholder{
+            color: chartreuse;
+        }
+
+        h3::before{
+            content: "Hello Poonam!";
+            font-size: 35px;
+            background-color: yellow;
+            font-weight: 900;
+            display: block;
+        }
+
+        h3::after{
+            content: "Now Happy?";
+            font-size: 35px;
+            background-color: rgb(255, 0, 242);
+            font-weight: 900;
+            display: block;
+        }
+    </style>
+</head>
+<body><h1>Pseudo Element</h1><h2>::first-letter- use on 'L' letter in paragraph</h2><h2>::first-line- use on first line in paragraph</h2><h2>::selection- when we select text/para. then it's use for change that para's background-color , & it's use on underorder list (select the whole page then you will get output)</h2><h2>::placeholder- use for styling the placeholders</h2><h2>::before-use for give text & along with style before to the paragraph/any selector</h2><h2>::after- for give text & along with style after/last of the paragraph/any selector</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquid earum rem consectetur ad neque? Accusantium enim accusamus adipisci voluptates similique expedita, fuga iste nobis perspiciatis eum repellat culpa vero aperiam repellendus cumque dolore omnis praesentium placeat. Consequuntur placeat saepe, minus perspiciatis libero asperiores laborum magnam, tempora ipsa, dicta incidunt quasi sint neque illum impedit nesciunt eum ipsum facere. Perspiciatis deleniti fugiat quidem modi eaque, error eligendi accusamus in distinctio. Dolor, rerum repellat? Voluptas perspiciatis et, nulla reiciendis eligendi ipsam culpa illum sunt libero ea laudantium molestias autem eaque fuga rem quibusdam natus aut expedita excepturi eveniet. Est, vero numquam?</p>
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vero nam laborum laboriosam itaque ratione veritatis accusantium eligendi iusto illo ea asperiores, adipisci reprehenderit non debitis labore dolores et, eveniet quaerat sequi quam inventore aut voluptate sed? Repellendus, ipsum aut.</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolor quos aliquid? Commodi maxime eos asperiores inventore totam consequatur fugiat voluptatum quaerat ipsa minima, laudantium ipsum tenetur, voluptas, at deleniti temporibus. Accusantium voluptatibus deserunt recusandae quod incidunt expedita debitis dignissimos atque quas aspernatur quae voluptate dicta doloremque tempora exercitationem sequi, assumenda amet necessitatibus error a corporis ea at culpa adipisci. Natus iste accusantium nihil veritatis reiciendis, modi explicabo consequuntur! Recusandae beatae natus sint autem neque illum, quia voluptatum facilis voluptas voluptate molestiae veritatis assumenda nostrum dolorum nobis nam accusantium, eligendi distinctio nesciunt suscipit vel provident nisi? Ad asperiores hic velit quas, minima quod veritatis optio. Ducimus voluptas est molestiae suscipit. Magnam expedita consequatur ipsum iure quos facilis, maxime quas vitae nobis optio est libero repellat magni voluptate quis, facere quam repellendus odit tempora necessitatibus veritatis explicabo. Voluptates debitis magnam dignissimos amet quos veritatis esse tempora deleniti, officia mollitia nihil aliquam qui consequuntur delectus, numquam corporis doloremque placeat dolorum adipisci accusamus sapiente? Similique blanditiis iste modi aperiam asperiores illo. Quia, quaerat. Rerum soluta optio, eveniet deleniti deserunt ipsa exercitationem aut perspiciatis nemo non, quis assumenda, repellendus cumque. Provident non consequatur tempore, quae ratione iste voluptatum, officiis minus, deserunt doloribus libero voluptatem?</p>
+
+
+        <input type="text" placeholder="First Name"><br><br>
+        <input type="text" placeholder="Last Name"><br><br>
+        <input type="password" placeholder="Password"><br><br>
+
+
+        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam harum voluptatem ipsum modi molestias vitae, praesentium quidem idelectus quas aliquam mollitia in dolore corporis tempore eligendi, at, nemo ipsum </h3>
+    </body>
+</html>

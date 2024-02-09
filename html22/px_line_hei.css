@@ -1,0 +1,35 @@
+#one{
+    font-size: 75px;
+}
+
+#two{
+    font-size: 10px;
+}
+
+#three{
+    line-height: 2px;
+}
+
+#four{
+    line-height: 20px;
+}
+
+#five{
+    line-height: 50px;
+}
+
+#punu{
+    text-transform: capitalize;
+}
+
+#rutu{
+    text-transform:lowercase;
+}
+
+#punam{
+    text-transform:uppercase;
+}
+
+#ritu{
+    text-transform:none;
+}

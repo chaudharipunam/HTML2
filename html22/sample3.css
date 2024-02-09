@@ -1,0 +1,35 @@
+#h1{
+    font-weight: normal;
+    text-shadow: -2px 2px 3px rgb(228, 1, 39);
+}
+
+#h2{
+    font-weight: bold;
+    text-shadow: -2px -2px 3px rgb(228, 1, 39);
+}
+
+#h3{
+    font-weight: lighter;
+    text-shadow: 2px -2px 3px rgb(228, 1, 39);
+}
+
+#h4{
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px rgb(228, 1, 39);
+}
+
+.hi{
+    height: 100px;
+    width: 200px;
+    border: 2px solid black;
+    word-wrap: break-word;
+}
+
+.hii{
+    height: 70px;
+    width: 200px;
+    border: 2px solid black;
+    word-break: break-all;
+}
+
+

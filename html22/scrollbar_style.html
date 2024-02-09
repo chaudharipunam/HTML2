@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            height: 200px;
+            width: 300px;
+            border: 1px  solid black;
+            overflow: auto;
+            float: left;
+        }
+
+        .a::-webkit-scrollbar{
+            width: 10px;
+            background-color: gray;
+        }
+
+        .b{
+            height: 200px;
+            width: 300px;
+            border: 1px  solid black;
+            overflow: auto;
+            float: left;
+            margin-left: 30px;
+        }
+
+        .b::-webkit-scrollbar{
+            width: 10px;
+            border-radius: 10px;
+            background: green;
+        }
+
+        .c{
+            height: 200px;
+            width: 300px;
+            border: 1px  solid black;
+            overflow: auto;
+            float: left;
+            margin-left: 30px;
+        }
+
+        .c::-webkit-scrollbar{
+            width: 10px;
+            border-radius: 10px;
+            background: linear-gradient(darkblue,white);
+        }
+
+        .d{
+            height: 200px;
+            width: 300px;
+            border: 1px  solid black;
+            overflow: auto;
+            float: left;
+            margin-left: 8px;
+        }
+
+        .d::-webkit-scrollbar{
+            width: 10px;
+            border-radius: 10px;
+            background: #f5f5f5;
+            box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        }
+
+        .e{
+            height: 200px;
+            width: 150px;
+            border: 1px  solid black;
+            overflow: auto;
+            float: left;
+            margin-left: 8px;
+            margin-top: 28px;
+        }
+
+        .e::-webkit-scrollbar-corner{
+            width: 10px;
+            border-radius: 10px;
+            background: #f5f5f5;
+            box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body><h1>ScrollBar Styling--use for style to the scrollbar  for that we have to use preffix-   "-webkit"</h1>
+    <div class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam possimus repellendus quos voluptatibus repudiandae! Eum, minima tenetur rerum accusantium a ut et nostrum sit commodi! Tempore ducimus aut saepe obcaecati.
+    Natus eos obcaecati veritatis corrupti hic deserunt cum, voluptate iste incidunt repellat eveniet necessitatibus, sunt consectetur asperiores id ab omnis quo ut ipsa! Reprehenderit hic, sit obcaecati dolorum blanditiis nostrum.
+    Quis harum rerum corporis vitae ut? Sed fugiat cupiditate voluptates tenetur accusantium beatae inventore quidem aliquam. Eum quae, consectetur cupiditate illum quasi quisquam, nihil fugiat alias voluptas perferendis sed natus!
+    Aliquid laudantium tempora excepturi harum ea aspernatur tempore dignissimos recusandae cupiditate eligendi placeat, sequi, eius eaque itaque sit totam mollitia nulla ipsum repudiandae et exercitationem, non cumque. Unde, quam suscipit?</div>
+
+    <div class="b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam possimus repellendus quos voluptatibus repudiandae! Eum, minima tenetur rerum accusantium a ut et nostrum sit commodi! Tempore ducimus aut saepe obcaecati.
+        Natus eos obcaecati veritatis corrupti hic deserunt cum, voluptate iste incidunt repellat eveniet necessitatibus, sunt consectetur asperiores id ab omnis quo ut ipsa! Reprehenderit hic, sit obcaecati dolorum blanditiis nostrum.
+        Quis harum rerum corporis vitae ut? Sed fugiat cupiditate voluptates tenetur accusantium beatae inventore quidem aliquam. Eum quae, consectetur cupiditate illum quasi quisquam, nihil fugiat alias voluptas perferendis sed natus!
+        Aliquid laudantium tempora excepturi harum ea aspernatur tempore dignissimos recusandae cupiditate eligendi placeat, sequi, eius eaque itaque sit totam mollitia nulla ipsum repudiandae et exercitationem, non cumque. Unde, quam suscipit?</div>
+
+        <div class="c">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam possimus repellendus quos voluptatibus repudiandae! Eum, minima tenetur rerum accusantium a ut et nostrum sit commodi! Tempore ducimus aut saepe obcaecati.
+            Natus eos obcaecati veritatis corrupti hic deserunt cum, voluptate iste incidunt repellat eveniet necessitatibus, sunt consectetur asperiores id ab omnis quo ut ipsa! Reprehenderit hic, sit obcaecati dolorum blanditiis nostrum.
+            Quis harum rerum corporis vitae ut? Sed fugiat cupiditate voluptates tenetur accusantium beatae inventore quidem aliquam. Eum quae, consectetur cupiditate illum quasi quisquam, nihil fugiat alias voluptas perferendis sed natus!
+            Aliquid laudantium tempora excepturi harum ea aspernatur tempore dignissimos recusandae cupiditate eligendi placeat, sequi, eius eaque itaque sit totam mollitia nulla ipsum repudiandae et exercitationem, non cumque. Unde, quam suscipit?</div>
+
+            <div class="d">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam possimus repellendus quos voluptatibus repudiandae! Eum, minima tenetur rerum accusantium a ut et nostrum sit commodi! Tempore ducimus aut saepe obcaecati.
+                Natus eos obcaecati veritatis corrupti hic deserunt cum, voluptate iste incidunt repellat eveniet necessitatibus, sunt consectetur asperiores id ab omnis quo ut ipsa! Reprehenderit hic, sit obcaecati dolorum blanditiis nostrum.
+                Quis harum rerum corporis vitae ut? Sed fugiat cupiditate voluptates tenetur accusantium beatae inventore quidem aliquam. Eum quae, consectetur cupiditate illum quasi quisquam, nihil fugiat alias voluptas perferendis sed natus!
+                Aliquid laudantium tempora excepturi harum ea aspernatur tempore dignissimos recusandae cupiditate eligendi placeat, sequi, eius eaque itaque sit totam mollitia nulla ipsum repudiandae et exercitationem, non cumque. Unde, quam suscipit?</div>
+
+                <div class="e">
+                    <img src="flowers2.jpeg"> ipsum dolor sit amet consectetur adipisicing elit. Ipsam possimus repellendus quos voluptatibus repudiandae! Eum, minima tenetur rerum accusantium a ut et nostrum sit commodi! Tempore ducimus aut saepe obcaecati.
+                    Natus eos obcaecati veritatis corrupti hic deserunt cum, voluptate iste incidunt repellat eveniet necessitatibus, sunt consectetur asperiores id ab omnis quo ut ipsa! Reprehenderit hic, sit obcaecati dolorum blanditiis nostrum.
+                    Quis harum rerum corporis vitae ut? Sed fugiat cupiditate voluptates tenetur accusantium beatae inventore quidem aliquam. Eum quae, consectetur cupiditate illum quasi quisquam, nihil fugiat alias voluptas perferendis sed natus!
+                    Aliquid laudantium tempora excepturi harum ea aspernatur tempore dignissimos recusandae cupiditate eligendi placeat, sequi, eius eaque itaque sit totam mollitia nulla ipsum repudiandae et exercitationem, non cumque. Unde, quam suscipit?</div>
+                
+            
+</body>
+</html>

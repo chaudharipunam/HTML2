@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+        .a{
+            width: 400px;
+            height:300px;
+            border: 2px solid black;
+            background-color: pink;
+            text-align: center;
+            font-size: 40px;
+            overflow: auto;
+            resize: vertical;
+            /*vertically bda ho/kr skte hai*/
+            resize: horizontal;   /*horizontally bda ho/kr skte hai*/
+            resize: both;    /*verti/hori both side se bda hoga*/
+        }
+
+        .b{
+            width: 400px;
+            height:300px;
+            border: 2px solid black;
+            background-color: pink;
+            text-align: center;
+            font-size: 40px;
+            overflow: auto;
+            resize: vertical;   
+        }
+
+        .a p{
+            font-size: 20px;
+        }
+
+        #x{
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="b">resize property-- look at right side bottom-- ham us corner ko kheech bhi skte hai</div><br><br>
+    <div class="a">Resize Property<br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, veniam. Adipisci possimus, assumenda laborum soluta, beatae delectus quaerat facere sit aliquid sint eos? Alias ad nisi eaque suscipit delectus optio!
+    Accusantium placeat laboriosam esse? Ducimus praesentium corporis impedit reprehenderit iste magnam harum explicabo nobis cum reolor sit amet consectetur adipisicing elit. Ipsa, veniam. Adipisci possimus, assumenda laborum soluta, beatae delectus quaerat facere sit aliquid sint eos? Alias ad nisi eaque suscipit delectus optio!
+    Accusantium placeat laboriosam esse? Ducimus praesentium corporis impedit reprehenderit iste magnam harum explicabo nobis cum rerrum rem sed natus sunt assumenda alias in sint neque corrupti optio a, laborum ut.</p></div>
+
+    <textarea>Textarea- instead of resize we can directly use this property & there is already option in right corner to size bda-chhhota krne ke liye</textarea>
+
+
+    <br>
+
+    <textarea id="x">this is also textarea box, but   here resize is none, so, that's why we can't bda-chhota to the box,  but we can write so many text here whaiever we want, it will be scroll</textarea>
+</body>
+</html>
